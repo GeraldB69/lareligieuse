@@ -43,13 +43,18 @@
             <h2>Contact / Commandes</h2>
             <div class="form-container">
                 <form action="" class="contact-form flex-column">
-                    <label for="radio-contact" class="radio">contact</label>
-                    <input id="radio-contact" class = "radio" type="radio" name="form-type" value="contact" checked>
-                    <label for="radio-order">commande</label>
-                    <input id="radio-order" class="radio" type="radio" name="form-type" value="order">
+                    <div class="radio-contact">
+                        <input id="radio-contact" class = "radio" type="radio" name="form-type" value="contact" checked>
+                        <label for="radio-contact" class="radio">contact</label>
+                    </div>
+                    <div class="radio-order">
+                        <input id="radio-order" class="radio" type="radio" name="form-type" value="order">
+                        <label for="radio-order">commande</label>
+                    </div>
                     <input type="text" placeholder="société">
                     <input type="email" placeholder="email *">
                     <textarea name="message *" id="" cols="30" rows="10">message</textarea>
+                    <input class="contact-button" type="submit" value="Envoyer">
                 </form>
             </div>
         </section>
