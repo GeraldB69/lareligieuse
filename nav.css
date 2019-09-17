@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    list-style-type: none;
+}
+
+a:link {
+    color: greenyellow;
+    text-decoration:none;
+}
+
+a:visited {
+    color: green;
+    text-decoration:none;
+}
+
+
+/* HEADER */
+
+
+header {
+    display: flex;
+    background-color: rgb(48, 48, 48);
+    justify-content: space-between;
+    height:8em;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    font-size: 4em;
+    color: greenyellow;
+    text-shadow: 2px 2px 2px rgb(32, 32, 32);
+    width: 30%;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    height: auto;
+    width: 30%; 
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2em;
+}
+
+
+/* FOOTER */
