@@ -18,26 +18,32 @@ function changeVisibleForm(checkbox, form1, form2) {
     }
 }
 
-formButton = document.getElementById("toggle-button");
+let formButton = document.getElementById("toggle-button");
 
-contactForm = document.getElementById("form1");
-orderForm = document.getElementById("form2");
+let contactForm = document.getElementById("form1");
+let orderForm = document.getElementById("form2");
 
-contactCheckbox = document.getElementById("radio-contact");
-orderCheckbox = document.getElementById("order-checkbox");
+let contactCheckbox = document.getElementById("radio-contact");
+let orderCheckbox = document.getElementById("order-checkbox");
 
-radios = document.getElementById("radios");
-//radios.addEventListener("click", function(){checkRadiosValues(contactCheckbox, orderCheckbox, contactForm, orderForm);});
+let radios = document.getElementById("radios");
+
 radios.addEventListener("click", function(){
     changeVisibleForm(contactCheckbox, contactForm, orderForm);
     //alert("Work done!");
 });
 
-//changeVisibleForm(contactCheckbox, contactForm, orderForm);
-function getRed(elt) {
-    elt.style.backgroundColor = "red";
+function calculatePrice(elt, htmlElement) {
+    let total = elt.value * 45;
+    htmlElement.innerHTML = total;
+    if (elt.value > 100) {
+        alert("La Religieuse étant une distillerie artisanale, nous ne pouvons malheureusement pas assurer uen commande de plus de 100 bouteilles")
+        elt.value = 100;
+    } 
 }
 
-//contactCheckbox.addEventListener("click", function(){addHiddenClass(orderForm);});
-//orderCheckbox.addEventListener("click", function(){addHiddenClass(contactForm);});
-
+let quantity = document.getElementById("number-input");
+let total = document.getElementById("total");
+quantity.addEventListener("input", function(){
+    calculatePrice(quantity, total);
+});
