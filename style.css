@@ -51,6 +51,17 @@ table {
 /* ----- reset CSS ----- */
 
 
+
+@font-face {
+    font-family: 'creator_campotype_smcpregular';
+    src: url('font/creator/creator_campotype_smcp-webfont.woff2') format('woff2'),
+         url('font/creator/creator_campotype_smcp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 html, body, .container{
     width: 100%;
     height: 100%;
@@ -119,13 +130,12 @@ header .container{
 }
 
 .home-title h1{
-    font-family: 'Cinzel', serif;
-    font-weight: 900;
-    margin-bottom: 2px;
-    text-transform: uppercase;
+    font-family: creator_campotype_smcpregular;
+    margin-bottom: -15px;
     color: wheat;
-    font-size: 7.5vw;
     text-shadow: 2px 2px 2px #000000;
+    text-align: center;
+    font-size: 14vw;
 }
 
 .home-title h2, #home-cocktails h3{
@@ -217,6 +227,14 @@ section{
     section{
         padding: 50px 10px;
     }
+
+    .home-title h1{
+        font-size: 12vw;
+    }
+
+    .home-title h2{
+        font-size: 38.4px;
+    }
     
     .home-bottle{
         width: 40%;
@@ -271,7 +289,8 @@ section{
     }
 
     .home-title h1{
-        font-size: 60px;
+        font-size: 114px;
+        margin-bottom: -25px;
     }
 
     .home-title h2{
