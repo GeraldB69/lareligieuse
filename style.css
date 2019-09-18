@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ----- reset CSS ----- */
+
+
+
+@font-face {
+    font-family: 'creator_campotype_smcpregular';
+    src: url('font/creator/creator_campotype_smcp-webfont.woff2') format('woff2'),
+         url('font/creator/creator_campotype_smcp-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+html, body, .container{
+    width: 100%;
+    height: 100%;
+}
+
+html{
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: black;
+}
+
+.return{
+    clear: both;
+}
+
+p{
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+.home-button{
+    float: right;
+    -webkit-box-shadow: 2px 2px 3px 2px #000;
+    box-shadow: 2px 2px 3px 2px #000;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: 2px 2px 3px 2px #000;
+    box-shadow: 2px 2px 3px 2px #000;
+    box-sizing: border-box;
+    padding-top: 20vh;
+    transform-style: preserve-3d;
+}
+
+header::before{
+    content:"";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2019/08/02/21/10/temptation-4380631_960_720.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: -1;
+    transform: translateZ(-1px) scale(2);
+}
+
+header .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.home-title{
+    margin-right: 10px;
+}
+
+.home-title h1{
+    font-family: creator_campotype_smcpregular;
+    margin-bottom: -15px;
+    color: wheat;
+    text-shadow: 2px 2px 2px #000000;
+    text-align: center;
+    font-size: 14vw;
+}
+
+.home-title h2, #home-cocktails h3{
+    font-size: 4.85vw;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: lightgreen;
+    font-family: 'Cinzel', serif;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+#home-cocktails h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+section{
+    padding: 30px 10px;
+    -webkit-box-shadow: 2px 2px 3px 2px #000;
+    box-shadow: 2px 2px 3px 2px #000;
+    z-index: 2;
+    position: relative;
+}
+
+#home-story{
+    background-color: #fff;
+}
+
+.home-bottle{
+    width: 45%;
+    max-width: 250px;
+    float: left;
+    margin: -85% 15px 0 -50px;
+}
+
+.home-bottle img{
+    width: 100%;
+}
+
+#home-cocktails{
+    background-color: #302b27;
+}
+
+#home-cocktails figure{
+    margin: 15px 0;
+}
+
+#home-cocktails figcaption{
+    text-align: right;
+    margin: -25px 10px 5px 0;
+    color: white;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.home-cocktail-moment img{
+    width: calc(100% - 6px);
+    border: inset;
+}
+
+#home-cocktails p{
+    color: white;
+}
+
+.home_ingredient{
+    width: 100%;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000000;
+    display: none;
+}
+
+#home-cocktails ul{
+    margin: 5px 0;
+    color: lightgreen;
+}
+
+#home-cocktails ul li{
+    padding: 5px;
+}
+
+#home-cocktails ul li:before{
+    content: "\f000"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    width: 1.5em;
+}
+
+@media only screen and (min-width: 768px) {
+
+    section{
+        padding: 50px 10px;
+    }
+
+    .home-title h1{
+        font-size: 12vw;
+    }
+
+    .home-title h2{
+        font-size: 38.4px;
+    }
+    
+    .home-bottle{
+        width: 40%;
+        margin-top: -67%;
+    }
+
+    .home-cocktail-moment{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    #home-cocktails figure{
+        margin: 0 0 0 10px;
+        width: calc(50% - 10px);
+        order: 2;
+    }
+
+    .home-cocktail-description{
+        width: calc(50% - 10px);
+        margin-right: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .home-cocktail-description .home-button{
+        float: none;
+        width: 120px;
+        -webkit-box-shadow: 2px 2px 3px 2px #000;
+        box-shadow: 2px 2px 3px 2px #000;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+    .container{
+        margin: 0 auto;
+        width: 992px;
+    }
+
+    section{
+        padding: 100px 10px;
+    }
+
+    .home-bottle{
+        width: 28%;
+        margin-left: 0;
+        margin-top: -50%;
+    }
+
+    .home-title h1{
+        font-size: 114px;
+        margin-bottom: -25px;
+    }
+
+    .home-title h2{
+        font-size: 38.4px;
+    }
+
+    .home_ingredient{
+        display: block;
+    }
+
+}
