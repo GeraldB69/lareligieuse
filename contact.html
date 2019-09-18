@@ -67,9 +67,9 @@
 
             <div class="form-container" id="form2">
                 <form action="" class="contact-form flex-column">
-                    <label for="number-input" class="number-label">quantité</label>
-                    <input id="number-input" type="number" min="0" max="100">
-                    <span>Total: 50€</span>
+                    <label for="number-input" class="number-label">quantité (max 100)</label>
+                    <input id="number-input" type="number" min="0" max="100" value="0">
+                    <div>Total: <span id="total">0</span> €</div>
                     <input type="text" placeholder="société">
                     <input type="text" placeholder="nom*">
                     <input type="email" placeholder="email *">
@@ -79,7 +79,12 @@
                     <input class="contact-button" type="submit" value="Commander">
                 </form>
             </div>
+
+            <div id="summary">
+
+            </div>
         </section>
+
         <!--
         <footer>
             <ul>
@@ -95,6 +100,7 @@
             <a href="https://www.youtube.com" class="fa fa-youtube"></a>      
         </footer>
         -->
+
         <script src="contact.js"></script>
     </body>
 
