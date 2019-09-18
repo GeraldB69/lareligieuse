@@ -273,7 +273,7 @@ section{
 @media only screen and (min-width: 992px) {
     .container{
         margin: 0 auto;
-        width: 992px;
+        width: calc(992px - 20px);
     }
 
     section{
