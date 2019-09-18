@@ -54,6 +54,7 @@ table {
     ===== END RESET =====
 */
 
+
 body {
     background-color: #2c2c2c;
     color: #e0e0e0;
@@ -67,10 +68,16 @@ h2 {
     color: #157c43
 }
 
+#form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 /* Contact form */
 
 .radios {
-    
+    margin-left: 10%;
+    text-align: left;
 }
 
 .form-container {
@@ -123,7 +130,7 @@ h2 {
 
 button {
     padding: 10px 20px;
-    background-color: gainsboro;
+    background-color: red;
 }
 
 .button {
