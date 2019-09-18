@@ -159,8 +159,8 @@ h3 {
     text-align:center;
 }
 
-.cocktails-great-cocktail img:hover, 
-.cocktails-all-cocktails img:hover {
+.cocktails-great-cocktail article:hover > img, 
+.cocktails-all-cocktails article:hover > img {
     transform: scale(1.05);
 }
  
