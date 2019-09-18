@@ -13,13 +13,7 @@
             integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
             crossorigin=""/>
         <link rel="stylesheet" href="contact.css" />
-        <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
-            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-            crossorigin=""></script>
     </head>
-        
-    </head>
-
     <body>
         <!--
         <header>
@@ -39,40 +33,52 @@
             </div>
         </section>
 
+        
+        <p>
+            Où nous trouver :
+            17 rue Delandine
+            69002 Lyon
+        </p>
         <section id="form">
             <h2>Contact / Commandes</h2>
-            <div class="form-container">
 
-                <div class="radios">
-                    <div class="radio-contact">
-                        <input id="radio-contact" class = "radio" type="radio" name="form-type" value="contact" checked>
-                        <label for="radio-contact" class="radio">contact</label>
-                    </div>
-                    <div class="radio-order">
-                        <input id="radio-order" class="radio" type="radio" name="form-type" value="order">
-                        <label for="radio-order">commande</label>
-                    </div>
+            <div class="radios" id="radios">
+                <div id="contact-checkbox" class="radio-contact">
+                    <input id="radio-contact" class = "radio" type="radio" name="form-type" value="contact" checked>
+                    <label for="radio-contact" class="radio">contact</label>
                 </div>
+                <div id="order-checkbox" class="radio-order">
+                    <input id="radio-order" class="radio" type="radio" name="form-type" value="order">
+                    <label for="radio-order">commande</label>
+                </div>
+            </div>
 
-                <div class="form1">
-                    <form action="" class="contact-form flex-column">
-                        <input type="text" placeholder="société">
-                        <input type="email" placeholder="email *">
-                        <textarea name="message *" id="" cols="30" rows="10">message</textarea>
-                        <input class="contact-button" type="submit" value="Envoyer">
-                    </form>
-                </div>
+            
+                <button id="toggle-button">Toggle contact/order</button>
+            
+            
+            <div class="form-container" id="form1">
+                <form action="" class="contact-form flex-column">
+                    <input type="text" placeholder="société">
+                    <input type="email" placeholder="email *">
+                    <textarea name="message *" id="" cols="30" rows="10" placeholder="message*"></textarea>
+                    <input class="contact-button" type="submit" value="Envoyer">
+                </form>
+            </div>
 
-                <div class="form2 hidden">
-                    <form action="" class="order-form flex-column">
-                        <input type="number" id="bottles" name="bottles" min="1" max="100">
-                        <input type="text" placeholder="société">
-                        <input type="email" placeholder="email *">
-                        <textarea name="message *" id="" cols="30" rows="10">message</textarea>
-                        <textarea name="message *" id="" cols="30" rows="10">message</textarea>
-                        <input class="contact-button" type="submit" value="Envoyer">
-                    </form>
-                </div>
+            <div class="form-container" id="form2">
+                <form action="" class="contact-form flex-column">
+                    <label for="number-input" class="number-label">quantité</label>
+                    <input id="number-input" type="number" min="0" max="100">
+                    <span>Total: 50€</span>
+                    <input type="text" placeholder="société">
+                    <input type="text" placeholder="nom*">
+                    <input type="email" placeholder="email *">
+                    <input type="tel" placeholder="tel *">
+                    <textarea name="address *" id="" cols="30" rows="4" placeholder="adresse*"></textarea>
+                    <textarea name="message *" id="" cols="30" rows="10" placeholder="commentaires"></textarea>
+                    <input class="contact-button" type="submit" value="Commander">
+                </form>
             </div>
         </section>
         <!--
@@ -90,14 +96,7 @@
             <a href="https://www.youtube.com" class="fa fa-youtube"></a>      
         </footer>
         -->
-        <div data-video="lBnEdfLmh5I"  
-         data-autoplay="1"         
-         data-loop="1"
-         id="youtube-audio">
-        </div>
-        <script src="https://www.youtube.com/iframe_api"></script>
-        <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
-
+        <script src="contact.js"></script>
     </body>
 
 </html>
