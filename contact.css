@@ -69,6 +69,10 @@ h2 {
 
 /* Contact form */
 
+.radios {
+    
+}
+
 .form-container {
     display: flex;
     justify-content: center;
@@ -88,7 +92,6 @@ h2 {
 .contact-form textarea {
     font-family: sans-serif;
     resize: none;
-    margin-bottom: 30px;
     border: none;
     border-radius: 5px;
 }
@@ -98,6 +101,7 @@ h2 {
     color: #e0e0e0;
     border-radius: 5px;
     border: none;
+    margin-top: 30px;;
 }
 
 .contact-form .contact-button:hover {
@@ -112,5 +116,21 @@ h2 {
 
 /* Order form */
 
+.hidden {
+    display: none;
+    margin: 0 auto; 
+}
 
+button {
+    padding: 10px 20px;
+    background-color: gainsboro;
+}
 
+.button {
+    text-align: center;
+    margin: 20px;
+}
+
+#number-input {
+    width: 40px;    
+}
