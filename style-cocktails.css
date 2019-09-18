@@ -78,9 +78,8 @@ h3 {
     padding: 10px;
 }
 
-/* The hero image */
 .cocktails-head {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://fr.tokkoro.com/picsup/2066381-row-of-open-empty-green-bottles-isolated-on-white-background.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static1.villaschweppes.com/articles/6/58/86/@/20736-le-cocktail-green-river-opengraph_1200-3.jpg");
 /*    height: 100%;*/
     height: 30%;
     position: relative;
@@ -96,6 +95,12 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.cocktails-great-cocktail article h2,
+.cocktails-all-cocktails article h2, 
+.cocktails-great-cocktail article h3,
+.cocktails-all-cocktails article h3 {
+    text-align: center;
+}
  
 .cocktails-great-cocktail article,
 .cocktails-all-cocktails article {
@@ -105,16 +110,16 @@ h3 {
     /* border-radius: 5px; */
     color: #999;
 }
-.cocktails-great-cocktail article h2,
-.cocktails-all-cocktails article h2, 
-.cocktails-great-cocktail article h3,
-.cocktails-all-cocktails article h3 {
-    text-align: center;
+
+
+.cocktails-great-cocktail ul, 
+.cocktails-all-cocktails ul {
+    padding: 0.5em 0;
 }
 
 .cocktails-great-cocktail li, 
 .cocktails-all-cocktails li {
-    padding-left: 1em;
+    padding: 0 0.5em;
 }
 
 .cocktails-great-cocktail li:before, 
@@ -122,7 +127,7 @@ h3 {
     content: "\f000"; /* FontAwesome Unicode */
     font-family: FontAwesome;
     display: inline-block;
-    margin-left: 1em;
+    margin-left:0.2em;
     width: 1.5em; 
 }
 
@@ -161,7 +166,7 @@ h3 {
 
 .cocktails-great-cocktail article:hover > img, 
 .cocktails-all-cocktails article:hover > img {
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
  
 .cocktails-all-cocktails article:hover {
@@ -190,9 +195,28 @@ h3 {
 .cocktails-all-cocktails p {
     padding: 5%;
 }
-/* 
-@media (min-width:700px) {
-    .great-cocktail article {
-        max-width: 970px;
+ /* VERSION DESKTOP (hover sur les cocktails) */
+
+@media (min-width:768px) {
+    article {
+        position: relative;
     }
-} */
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: #fff;
+        z-index:-1;
+        transition-duration: 0.5s;
+    }
+    article:hover .overlay {
+        opacity: 1;
+        z-index: 1000;
+    }
+
+}
