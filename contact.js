@@ -1,20 +1,4 @@
-//
-//function addHiddenClass(element) {
-//    element.classList.toggle("hidden");
-//}
-//
-//contactForm = document.getElementById("form1");
-//orderForm = document.getElementById("form2");
-//
-//contactCheckbox = document.getElementById("contact-checkbox");
-//orderCheckbox = document.getElementById("order-checkbox");
-//
-//contactCheckbox.addEventListener("click", function(){addHiddenClass(orderForm);});
-//orderCheckbox.addEventListener("click", function(){addHiddenClass(contactForm);});
-//
-//formButton = document.getElementById("toggle-button");
-//formButton.addEventListener("click", function(){addHiddenClass(contactForm);});
-//
+//TODO: Rajouter une apparition en la   
 
 function addClass(element, className) {
     element.classList.add(className);
@@ -26,13 +10,11 @@ function removeClass(element, className) {
 
 function changeVisibleForm(checkbox, form1, form2) {
     if (checkbox.checked) {
-        alert("This is executed");
-        form1.style.display = none;
-        form2.style.display = none;
-        radios.style.backgroundColor = "red";
+        form1.style.display = "flex";
+        form2.style.display = "none";
     } else {
-        form1.style.display = none;
-        form2.style.display = block;
+        form1.style.display = "none";
+        form2.style.display = "flex";
     }
 }
 
@@ -46,7 +28,7 @@ orderCheckbox = document.getElementById("order-checkbox");
 
 radios = document.getElementById("radios");
 //radios.addEventListener("click", function(){checkRadiosValues(contactCheckbox, orderCheckbox, contactForm, orderForm);});
-formButton.addEventListener("click", function(){
+radios.addEventListener("click", function(){
     changeVisibleForm(contactCheckbox, contactForm, orderForm);
     //alert("Work done!");
 });
