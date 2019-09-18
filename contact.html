@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="author" content="La Religieuse team">
         <meta name="description" content="La Religieuse est une liqueur puissante et énergisante élaborée à l'aide des mantes religieuses.">
-        
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:700,900|Lato:400,400i,700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
             integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
@@ -42,7 +42,8 @@
         <section id="form">
             <h2>Contact / Commandes</h2>
             <div class="form-container">
-                <form action="" class="contact-form flex-column">
+
+                <div class="radios">
                     <div class="radio-contact">
                         <input id="radio-contact" class = "radio" type="radio" name="form-type" value="contact" checked>
                         <label for="radio-contact" class="radio">contact</label>
@@ -51,11 +52,27 @@
                         <input id="radio-order" class="radio" type="radio" name="form-type" value="order">
                         <label for="radio-order">commande</label>
                     </div>
-                    <input type="text" placeholder="société">
-                    <input type="email" placeholder="email *">
-                    <textarea name="message *" id="" cols="30" rows="10">message</textarea>
-                    <input class="contact-button" type="submit" value="Envoyer">
-                </form>
+                </div>
+
+                <div class="form1">
+                    <form action="" class="contact-form flex-column">
+                        <input type="text" placeholder="société">
+                        <input type="email" placeholder="email *">
+                        <textarea name="message *" id="" cols="30" rows="10">message</textarea>
+                        <input class="contact-button" type="submit" value="Envoyer">
+                    </form>
+                </div>
+
+                <div class="form2 hidden">
+                    <form action="" class="order-form flex-column">
+                        <input type="number" id="bottles" name="bottles" min="1" max="100">
+                        <input type="text" placeholder="société">
+                        <input type="email" placeholder="email *">
+                        <textarea name="message *" id="" cols="30" rows="10">message</textarea>
+                        <textarea name="message *" id="" cols="30" rows="10">message</textarea>
+                        <input class="contact-button" type="submit" value="Envoyer">
+                    </form>
+                </div>
             </div>
         </section>
         <!--
@@ -73,6 +90,14 @@
             <a href="https://www.youtube.com" class="fa fa-youtube"></a>      
         </footer>
         -->
+        <div data-video="lBnEdfLmh5I"  
+         data-autoplay="1"         
+         data-loop="1"
+         id="youtube-audio">
+        </div>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+
     </body>
 
 </html>
