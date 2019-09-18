@@ -69,6 +69,11 @@ h2 {
     font-family: 'Cinzel', serif;
 }
 
+.address {
+    text-align: center;
+    margin: 30px;
+}
+
 #form {
     max-width: 600px;
     margin: 0 auto;
@@ -78,7 +83,13 @@ h2 {
 
 .radios {
     margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: left;
+}
+
+.checkboxes {
+    margin: 15px;
 }
 
 .form-container {
@@ -128,6 +139,10 @@ h2 {
 
 /* Order form */
 
+#form2 {
+    display: none;
+}
+
 .hidden {
     display: none;
     margin: 0 auto; 
@@ -135,7 +150,6 @@ h2 {
 
 button {
     padding: 10px 20px;
-    background-color: red;
 }
 
 .button {
