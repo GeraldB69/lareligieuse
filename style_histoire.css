@@ -1,0 +1,220 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+    /* HISTOIRE */
+
+
+body {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    color: rgb(15, 189, 15);
+    text-align: center;
+    margin: 20px;
+    font-family: 'Cinzel', serif;
+
+}
+
+.histoire-h2 {
+    font-size: 2em;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    margin: 60px 20px 20px 20px;
+    color: rgb(15, 189, 15);
+}   
+
+h3 {
+    font-size: 20px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    padding: 10px;
+    color: rgb(15, 189, 15);
+} 
+
+p {
+    font-size : 16px;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.1em;
+    color: rgb(128, 128, 128);
+}
+
+.histoire-pres-img {
+    display: none;
+}
+
+.pres-txt p {
+    padding: 20px; 
+    text-align: justify;   
+}
+
+.histoire-banner {
+    background-image: url("http://img.over-blog-kiwi.com/1/22/72/43/20170703/ob_aff85e_dly2190.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+}
+
+section {
+    margin: 20px;
+}
+
+
+.team-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    flex-shrink: 0;
+}
+
+.team-member {
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+}
+
+.team-member img {
+    padding: 10px;
+    margin: 10px;
+}
+
+
+
+@media screen and (min-width:576px) {
+
+    .histoire-banner {
+        height: 300px;
+    }
+
+    .pres-section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+    .pres-img-left {
+        background-image: url("https://framapic.org/tz99phtPvgW4/jXDGU4A3hJME.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 20px;
+        width: 25%;
+    }
+
+    .pres-txt {
+        width: 70%;
+    }
+
+    /* .pres-img img {
+        height: 200px; 
+    } */
+
+    .team-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    .team-member p {
+        max-width: 180px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .histoire-banner {
+        height: 400px;
+    }
+
+    .pres-txt {
+        width: 40%;
+    }
+    .pres-img-right {
+        background-image: url("https://framapic.org/tz99phtPvgW4/jXDGU4A3hJME.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: 20px;
+        width: 25%;
+    }
+  }
+
+
+  @media screen and (min-width:1200px){
+    .histoire-banner {
+        height: 500px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .pres-img-left, .pres-img-right{
+        background-repeat: repeat
+    }
+  }
+
+ 
