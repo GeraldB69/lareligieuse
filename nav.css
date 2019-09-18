@@ -78,7 +78,14 @@ footer {
     justify-content:space-between;
     background-color: rgb(48, 48, 48);
     height:80px;
-    padding: 7px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.linkfooter {
+    display: flex;
+    width: 80%;
+    border: 1px solid black;
 }
 
 footer .linkfooter ul {
@@ -86,15 +93,14 @@ footer .linkfooter ul {
     flex-direction: row;
     font-family: 'Lato', sans-serif;
     padding-left: 0px;
-    font-size: 1em;
+    border: 1px solid black;
+
 }
 
 h3 {
-    display: flex;
-    justify-content: center;
     font-family: 'Cinzel', serif;
-    font-size: 1em;
     color: azure;
+    border: 1px solid black;
 }
 
 
@@ -102,6 +108,8 @@ h3 {
     display: flex;
     justify-content: space-around;
     width: 80%;
+    border: 1px solid black;
+
 }
 
 /*MEDIAQUERIES*/
@@ -169,6 +177,7 @@ h3 {
         flex-direction: column;
         align-items: center;
         background-color: rgb(48, 48, 48);
+        height: auto;
     }
     
     footer div ul li {
@@ -198,7 +207,7 @@ h3 {
     
     .rsfooter {
         display: flex;
-        width: 30%;
+        width: 50%;
         margin-bottom: 15px;
     }
 }
