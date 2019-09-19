@@ -210,6 +210,9 @@ footer h3 {
     }
     
     .rsfooter {
-        width: 50%;
-        font-size: 2em;
+        width: 30%;
+        font-size: 25px;
+    }
+    footer h3 {
+        font-size: 30px;
     }
