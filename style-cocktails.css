@@ -50,16 +50,16 @@ table {
 h1, h2, article h3 {
     font-family: 'Cinzel', serif;
     font-weight: 900;
-    color: #90ee90;
+    color: rgb(169, 255, 31);
     width: 100%;
 }
 
 h1 {
-    font-size:2.5em;
+    font-size:3em;
     /* offset-x | offset-y | blur-radius | color */
     /* text-shadow: 1px 1px 2px black; */
     /* color | offset-x | offset-y | blur-radius */
-    text-shadow: #fc0 1px 0 10px; 
+    text-shadow: black 1px 0 10px; 
 }
 
 h2 {
@@ -149,8 +149,6 @@ section{
 
 .cocktails-great-cocktail li:before, 
 .cocktails-all-cocktails li:before {
-    content: "\f000"; /* FontAwesome Unicode */
-    font-family: FontAwesome;
     display: inline-block;
     margin-left:0.2em;
     width: 1.5em; 
@@ -176,7 +174,7 @@ section{
 }
 
 .cocktails-great-cocktail ul li {
-    color: #90ee90;
+    color: rgb(169, 255, 31);
     text-shadow: 1px 1px 2px black;
 }
 
@@ -190,7 +188,7 @@ section{
     max-width: 100%;
     /*height: auto; */
     transition: transform .2s;
-    border: inset;
+    border: 1px solid black;
 }
 
 .cocktails-great-cocktail img {
