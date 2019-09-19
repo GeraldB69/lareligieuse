@@ -293,6 +293,12 @@ section{
         float: none;
     }
 
+    .nav-home{
+        margin-right: 15px;
+    }
+
+
+
 }
 
 @media only screen and (min-width: 992px) {
