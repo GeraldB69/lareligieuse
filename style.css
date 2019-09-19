@@ -200,7 +200,6 @@ section{
 
 .home-cocktail-moment img{
     width: calc(100% - 6px);
-    border: inset;
 }
 
 #home-cocktails p{
