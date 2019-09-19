@@ -196,7 +196,7 @@ section{
     padding: 0;
 }
 
-.cocktails-great-cocktail article:hover > img, 
+
 .cocktails-all-cocktails article:hover > img {
     /* transform: scale(1.05); */
 }
