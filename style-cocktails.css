@@ -1,0 +1,279 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1, h2, article h3 {
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    color: #90ee90;
+    width: 100%;
+}
+
+h1 {
+    font-size:2.5em;
+    /* offset-x | offset-y | blur-radius | color */
+    /* text-shadow: 1px 1px 2px black; */
+    /* color | offset-x | offset-y | blur-radius */
+    text-shadow: #fc0 1px 0 10px; 
+}
+
+h2 {
+    margin: 1em 0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+article h3 {
+    margin: 0.8em;
+    text-shadow: 1px 1px 2px black;
+} 
+
+/* PAGE COCKTAILS */
+body, html {
+    height: 100%;
+    background-color: #302b27;
+}
+body {
+    perspective: none;
+}
+
+section{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+
+}
+.cocktails-article h2, 
+.cocktails-article h3 {
+    padding: 10px;
+}
+
+.cocktails-head {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url("https://static1.villaschweppes.com/articles/6/58/86/@/20736-le-cocktail-green-river-opengraph_1200-3.jpg");
+    height: 350px;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    transform: translate(0, 0);
+}
+.cocktails-h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cocktails-great-cocktail p,
+.cocktails-all-cocktails p {
+    text-align: justify;
+}
+
+.cocktails-great-cocktail ul li,
+.cocktails-all-cocktails ul li {
+    text-align:left;
+    line-height: 1.2em;
+}
+
+.cocktails-h1, 
+.cocktails-great-cocktail article h2,
+.cocktails-all-cocktails article h2, 
+.cocktails-great-cocktail article h3,
+.cocktails-all-cocktails article h3,
+.cocktails-great-cocktail,
+.cocktails-all-cocktails {
+    text-align: center;
+}
+ 
+.cocktails-great-cocktail article,
+.cocktails-all-cocktails article {
+    padding: 0;
+    border-radius: 5px;
+    color: #999;
+}
+
+.cocktails-great-cocktail ul, 
+.cocktails-all-cocktails ul {
+    padding: 1em 0;
+}
+
+.cocktails-great-cocktail li, 
+.cocktails-all-cocktails li {
+    padding: 0 1em;
+}
+
+.cocktails-great-cocktail li:before, 
+.cocktails-all-cocktails li:before {
+    content: "\f000"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left:0.2em;
+    width: 1.5em; 
+}
+
+.cocktails-great-cocktail, 
+.cocktails-all-cocktails {
+    display: flex;
+    margin: 0 auto;
+}
+
+.cocktails-great-cocktail article{
+    /* max-width: 450px; */
+    margin: 1em;
+    padding: 1em;
+    background-color: #221d1B;
+    -webkit-box-shadow: 2px 2px 3px 2px #000;
+    box-shadow: 2px 2px 3px 2px #000;
+}
+
+.cocktails-great-cocktail ul {
+    text-align: left;
+}
+
+.cocktails-great-cocktail ul li {
+    color: #90ee90;
+    text-shadow: 1px 1px 2px black;
+}
+
+.cocktails-all-cocktails ul li {
+    text-align:left;
+    line-height: 1.2em;
+}
+
+.cocktails-great-cocktail img, 
+.cocktails-all-cocktails img{
+    max-width: 100%;
+    /*height: auto; */
+    transition: transform .2s;
+    border: inset;
+}
+
+.cocktails-great-cocktail img {
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cocktails-great-cocktail article:hover > img, 
+.cocktails-all-cocktails article:hover > img {
+    /* transform: scale(1.05); */
+}
+ 
+/* .cocktails-all-cocktails article:hover {
+    background-color: #333;
+    transition-duration: 1s;
+} */
+
+.cocktails-great-cocktail {
+    justify-content: center;
+}
+
+.cocktails-all-cocktails {
+    max-width: 992px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.cocktails-all-cocktails article{
+    max-width: 300px;
+    margin: 10px;
+    color: #111;
+}
+.cocktails-great-cocktail p, 
+.cocktails-all-cocktails p {
+    padding: 1em;;
+}
+
+ /* VERSION DESKTOP (hover sur les cocktails) */
+
+@media (min-width:768px) {
+
+    .cocktails-all-cocktails article {
+        position: relative;
+    }
+    .cocktails-all-cocktails .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background-color: #eee;
+        z-index:-1;
+        transition-duration: 0.5s;
+    }
+    
+    .cocktails-all-cocktails article:hover .overlay {
+        opacity: 1;
+        z-index: 1000;
+    }
+    
+    article.cocktails-great-cocktail {
+        margin: 0 auto;
+    }
+
+    .cocktails-great-cocktail .left {
+        height: 100%;
+        margin-right: 2em;
+        float: left;
+        max-width: 300px;
+    }
+    
+    .cocktails-great-cocktail .right {
+        max-width: 992px;
+    }
+
+}
+
+#menu{ position: fixed !important; }
+.cocktails-h1 { width: 95% !important;}
+h3 { font-weight: 400 !important;}
