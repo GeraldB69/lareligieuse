@@ -216,3 +216,7 @@ footer h3 {
     footer h3 {
         font-size: 30px;
     }
+
+    #menu{
+        width: calc(100% + 15px);
+    }
