@@ -11,6 +11,7 @@ h1 {
     /* color | offset-x | offset-y | blur-radius */
     color: #90ee90;
     text-shadow: #fc0 1px 0 10px; 
+    display:none;
 }
 
 h2 {
@@ -49,7 +50,7 @@ section{
 }
 
 .cocktails-head {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://static1.villaschweppes.com/articles/6/58/86/@/20736-le-cocktail-green-river-opengraph_1200-3.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.pixabay.com/photo/2015/09/02/12/35/bar-918541_960_720.jpg");
     height: 350px;
     top: 0;
     background-position: center;
