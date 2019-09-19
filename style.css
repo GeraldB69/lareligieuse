@@ -88,8 +88,8 @@ body{
 
 p{
     padding-bottom: 11px;
-    text-align: justify;
     color: grey;
+    line-height: 20px;
 }
 
 .home-button{
