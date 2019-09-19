@@ -87,6 +87,7 @@ body{
 }
 
 p{
+    padding-bottom: 10px;
     text-align: justify;
     color: grey;
 }
