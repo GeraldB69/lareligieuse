@@ -234,10 +234,11 @@ section{
     .cocktails-great-cocktail .right {
         max-width: 992px;
     }
-    #menu {
-        padding-right: 15px;
-    }
 
+    #menu {
+        width: calc(100% + 15px);
+    }
+    
 }
 /* corrections diverses */
 #menu{ position: fixed !important;}
