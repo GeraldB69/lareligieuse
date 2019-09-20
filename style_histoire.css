@@ -54,6 +54,7 @@ table {
 
 #menu{ position: fixed !important; }
 
+
 /* HISTOIRE */
 
 
@@ -65,7 +66,7 @@ table {
 }
 
 .histoire-h1 {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     line-height: 1.2em;
     text-transform: uppercase;
@@ -77,11 +78,11 @@ table {
 }
 
 #equipe h2 {
-    font-size: 2em;
+    font-size: 25px;
     font-family: 'Cinzel', serif;
     font-weight: 700;
     padding: 20px;
-    color: #063804;
+    color: #535c51;
     text-align: center;
 }   
 
@@ -90,7 +91,7 @@ table {
     font-family: 'Cinzel', serif;
     font-weight: 700;
     padding: 10px;
-    color: #3e4b3d);
+    color: #535c51;
 } 
 
 p {
@@ -201,6 +202,13 @@ p {
     }
 }
 
+
+@media screen and (min-width:768px){
+    #menu {
+        padding-right:15px!important;
+    }
+}
+
 @media screen and (min-width:992px){
     .histoire-banner {
         height: 500px;
@@ -217,10 +225,20 @@ p {
         /* background-position-y: 20px; */
         width: 25%;
     }
+
+    .team-container {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    .pres-section {
+        max-width: 992px;
+        margin: 0 auto;
+    }
   }
 
 
-  @media screen and (min-width:1200px){
+  /* @media screen and (min-width:1200px){
     .histoire-banner {
         height: 500px;
     }
@@ -228,13 +246,14 @@ p {
     .team-container {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-between;
     }
 
     .pres-img-left, .pres-img-right{
         background-repeat: repeat
-    }
+    } */
+
   }
 
  
